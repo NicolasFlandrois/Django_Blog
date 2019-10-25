@@ -25,6 +25,9 @@ class PostCreateView(CreateView):
     model = Post
     fields = ['title', 'content']
 
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+
 
 def about(request):
     return render(request, 'blog/about.html', {'title': 'About'})
