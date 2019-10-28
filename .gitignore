@@ -1,6 +1,7 @@
 djangoblog.sublime-project
 djangoblog.sublime-workspace
 profile_pics
+config.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
